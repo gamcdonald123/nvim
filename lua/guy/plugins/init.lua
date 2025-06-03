@@ -34,4 +34,10 @@ require("lazy").setup({
        "nvim-tree/nvim-web-devicons"
     },
   },
+  {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  },
 })
