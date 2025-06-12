@@ -28,7 +28,6 @@ require("lazy").setup({
   {
     'stevearc/aerial.nvim',
     opts = {},
-    -- Optional dependencies
     dependencies = {
        "nvim-treesitter/nvim-treesitter",
        "nvim-tree/nvim-web-devicons"
@@ -39,5 +38,16 @@ require("lazy").setup({
     config = function()
       require('Comment').setup()
     end
+  },
+  {
+    "nvimdev/lspsaga.nvim",
+    event = "LspAttach",
+    config = function()
+      require("lspsaga").setup({})
+    end,
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "neovim/nvim-lspconfig",
+    },
   },
 })
