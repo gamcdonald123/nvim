@@ -5,3 +5,4 @@ vim.api.nvim_set_keymap("n", "<leader>t", ":NvimTreeToggle<CR>", { noremap = tru
 vim.api.nvim_set_keymap("n", "<leader>c", ":NvimTreeCollapse<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>b", ":Telescope buffers<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>h", ":noh<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<leader>y", "\"*y", { noremap = true, silent = true })
