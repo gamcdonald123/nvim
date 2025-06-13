@@ -29,7 +29,11 @@ require("aerial").setup({
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
 -- Nvim-tree setup
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  filters = {
+    git_ignored = false,
+  }
+})
 
 -- Telescope setup
 local actions = require("telescope.actions")

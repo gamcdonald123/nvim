@@ -10,6 +10,10 @@ vim.keymap.set("n", "<leader>c", "<cmd>NvimTreeCollapse<CR>", { noremap = true, 
 -- Clear search highlights
 vim.keymap.set("n", "<leader>h", "<cmd>noh<CR>", { noremap = true, silent = true, desc = "Clear search highlights" })
 
+-- Yank and paste to/from clipboard
+vim.keymap.set("n", "<leader>y", "\"*y", { noremap = true, silent = true, desc = "Yank to clipboard" })
+vim.keymap.set("n", "<leader>p", "\"*p", { noremap = true, silent = true, desc = "Paste from clipboard" })
+
 -- Command mode shortcut
 vim.keymap.set("n", ";", ":", { noremap = true, desc = "Command mode" })
 
