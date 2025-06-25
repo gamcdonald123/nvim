@@ -2,6 +2,7 @@
 vim.keymap.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true, desc = "Telescope: Find files" })
 vim.keymap.set("n", "<leader>r", "<cmd>Telescope treesitter<CR>", { noremap = true, silent = true, desc = "Telescope: Treesitter symbols" })
 vim.keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true, desc = "Telescope: Buffers" })
+vim.keymap.set("n", "<leader>lg", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true, desc = "Telescope: Live Grep" })
 
 -- NvimTree keymaps
 vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<CR>", { noremap = true, silent = true, desc = "Toggle NvimTree" })
